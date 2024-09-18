@@ -15,7 +15,7 @@ jobs:
               
            
 
-            - name: upload to docker
+            - name: upload to dockerr
               run: |
                 docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
                 docker build -t my_app_container .
